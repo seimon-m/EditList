@@ -13,6 +13,7 @@
 		F411EF8E252E521B000C83F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F411EF8C252E521B000C83F6 /* Main.storyboard */; };
 		F411EF90252E521D000C83F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F411EF8F252E521D000C83F6 /* Assets.xcassets */; };
 		F411EF93252E521D000C83F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F411EF91252E521D000C83F6 /* LaunchScreen.storyboard */; };
+		F411EF9C252E54D5000C83F6 /* MasterTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411EF9B252E54D5000C83F6 /* MasterTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F411EF8F252E521D000C83F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F411EF92252E521D000C83F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F411EF94252E521D000C83F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F411EF9B252E54D5000C83F6 /* MasterTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				F411EF88252E521B000C83F6 /* SceneDelegate.swift */,
 				F411EF8A252E521B000C83F6 /* ViewController.swift */,
 				F411EF8C252E521B000C83F6 /* Main.storyboard */,
+				F411EF9B252E54D5000C83F6 /* MasterTableTableViewController.swift */,
 				F411EF8F252E521D000C83F6 /* Assets.xcassets */,
 				F411EF91252E521D000C83F6 /* LaunchScreen.storyboard */,
 				F411EF94252E521D000C83F6 /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				F411EF8B252E521B000C83F6 /* ViewController.swift in Sources */,
 				F411EF87252E521B000C83F6 /* AppDelegate.swift in Sources */,
+				F411EF9C252E54D5000C83F6 /* MasterTableTableViewController.swift in Sources */,
 				F411EF89252E521B000C83F6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
