@@ -1,5 +1,5 @@
 //
-//  MasterTableTableViewController.swift
+//  MasterViewController.swift
 //  EditList
 //
 //  Created by Simon Müller on 07.10.20.
@@ -7,7 +7,9 @@
 
 import UIKit
 
-class MasterTableViewController: UITableViewController {
+class MasterViewController: UITableViewController {
+    
+    let data = DataProvider.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,28 +20,26 @@ class MasterTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return data.memberPersons.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        cell.textLabel?.text = "\(data.memberPersons[indexPath.row].firstName) \(data.memberPersons[indexPath.row].lastName)"
+        print(indexPath.row)
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -76,14 +76,19 @@ class MasterTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let detailView = segue.destination as? DetailViewController
+        let indexPath = self.tableView.indexPathForSelectedRow
+        detailView?.firstName.text = "(\(data.memberPersons[indexPath!.row].firstName)"
+        print(indexPath!.row)
+        print(data.memberPersons[indexPath!.row].firstName)
     }
-    */
+    
 
 }
