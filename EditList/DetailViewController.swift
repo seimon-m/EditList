@@ -13,14 +13,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var lastName: UILabel!
     @IBOutlet weak var postalCode: UILabel!
     
-    var firstNameData: String!
-    var lastNameData: String!
-    var postalCodeData: String!
+    var person: Person!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstName.text = self.firstNameData
+        firstName.text = self.person.firstName
+        lastName.text = self.person.lastName
+        postalCode.text = String(self.person.plz)
     }
     
     

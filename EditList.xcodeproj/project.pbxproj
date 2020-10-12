@@ -16,6 +16,7 @@
 		F411EF9C252E54D5000C83F6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411EF9B252E54D5000C83F6 /* MasterViewController.swift */; };
 		F498A1BC25330C030053CF66 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498A1BA25330C030053CF66 /* Person.swift */; };
 		F498A1BD25330C030053CF66 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498A1BB25330C030053CF66 /* DataProvider.swift */; };
+		F4B0D0E125349EA600F95D51 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B0D0E025349EA600F95D51 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F411EF9B252E54D5000C83F6 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		F498A1BA25330C030053CF66 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../../SwiftProgrammers/SwiftProgrammers/Person.swift; sourceTree = "<group>"; };
 		F498A1BB25330C030053CF66 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = ../../SwiftProgrammers/SwiftProgrammers/DataProvider.swift; sourceTree = "<group>"; };
+		F4B0D0E025349EA600F95D51 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				F411EF8F252E521D000C83F6 /* Assets.xcassets */,
 				F411EF91252E521D000C83F6 /* LaunchScreen.storyboard */,
 				F411EF94252E521D000C83F6 /* Info.plist */,
+				F4B0D0E025349EA600F95D51 /* EditViewController.swift */,
 			);
 			path = EditList;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				F411EF87252E521B000C83F6 /* AppDelegate.swift in Sources */,
 				F411EF9C252E54D5000C83F6 /* MasterViewController.swift in Sources */,
 				F411EF89252E521B000C83F6 /* SceneDelegate.swift in Sources */,
+				F4B0D0E125349EA600F95D51 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -85,7 +85,7 @@ class MasterViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         let detailView = segue.destination as? DetailViewController
         let indexPath = self.tableView.indexPathForSelectedRow
-        detailView?.firstNameData = "\(data.memberPersons[indexPath!.row].firstName)"
+        detailView?.person = data.memberPersons[indexPath!.row]
     }
     
 
