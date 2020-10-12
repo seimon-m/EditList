@@ -16,14 +16,20 @@ class DetailViewController: UIViewController {
     var person: Person!
 
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(person.firstName)
         firstName.text = self.person.firstName
         lastName.text = self.person.lastName
         postalCode.text = String(self.person.plz)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        let editView = segue.destination as? EditViewController
+        editView?.person = self.person
+    }
     
 }
 
