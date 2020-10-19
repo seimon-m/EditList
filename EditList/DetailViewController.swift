@@ -12,13 +12,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var firstName: UILabel!
     @IBOutlet weak var lastName: UILabel!
     @IBOutlet weak var postalCode: UILabel!
-    
     var person: Person!
-
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(person.firstName)
         firstName.text = self.person.firstName
         lastName.text = self.person.lastName
         postalCode.text = String(self.person.plz)

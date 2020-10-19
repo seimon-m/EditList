@@ -15,27 +15,20 @@ class EditViewController: UIViewController, UITextFieldDelegate {
     var person: Person!
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+        super.viewWillAppear(animated)
         firstNameInput.text = self.person.firstName
         lastNameInput.text = self.person.lastName
         plzInput.text = String(self.person.plz)
-        
-//        firstNameInput.delegate = self
-//        lastNameInput.delegate = self
-//        plzInput.delegate = self
     }
-    
-    @IBAction func firstNameChanged(_ sender: UITextField) {
-    }
-    
-    
     
     @IBAction func saveAndExitButtonPressed(_ sender: UIButton) {
-        print(firstNameInput.text!)
-//        print(person)
         self.person.firstName = firstNameInput.text!
-        
-//        self.presentingViewController?.viewWillAppear(false)
+        self.person.lastName = lastNameInput.text!
+        if let plz: Int = Int(plzInput.text!) {
+            self.person.plz = plz
+        } else {
+            self.person.plz = 0
+        }
         dismiss(animated: true)
     }
     
@@ -43,7 +36,4 @@ class EditViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
-    
-    
 }
